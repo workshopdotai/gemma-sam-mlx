@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+
+# macOS
+.DS_Store
+*.swp
+*~
+
+# Output files
+output*.mp4
+*.segmented.png
+
+# Plans/tasks (workshop artifacts)
+plans/
+tasks.json
+
+# Xcode user data
+xcuserdata/
+*.xcuserstate
+
+# Model cache (downloaded by MLX, large)
+*.gguf
+*.safetensors

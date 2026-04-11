@@ -1,0 +1,30 @@
+name: GemmaSAMApp
+options:
+  bundleIdPrefix: com.gemmasam
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "16.0"
+  createIntermediateGroups: true
+
+targets:
+  GemmaSAMApp:
+    type: application
+    platform: macOS
+    sources:
+      - GemmaSAMApp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.gemmasam.app
+        INFOPLIST_FILE: GemmaSAMApp/Info.plist
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "6.0"
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+    entitlements:
+      path: GemmaSAMApp/GemmaSAMApp.entitlements
+      properties:
+        com.apple.security.app-sandbox: false
+        com.apple.security.network.client: true
